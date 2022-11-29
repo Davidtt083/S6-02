@@ -1,0 +1,65 @@
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.very-specific-design {
+  width: 1920px;
+  height: 1280px;
+  text-align: center;
+  background: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, 0,0);
+          transform: translate3d(-50%, 0,0);
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+}
+
+.scaleable-wrapper {
+  padding: 20px;
+  resize: both;
+  position: relative;
+  height: 400px;
+}
+
+.front, .back {
+  width:100%;
+  min-height:300px;
+  display: table;
+}
+
+.front h3, .back p {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fast {
+  animation-duration: .5s;
+}
+.flashcard {
+  cursor:pointer;
+}
+ul{
+  padding: 15px;
+  font-size: 25px;
+}
+p{
+  text-align: justify;
+  font-size: 25px;
+}
+.imgc2c{
+  width: 47%;
+  height: auto;
+  margin-left: 26%;
+}
